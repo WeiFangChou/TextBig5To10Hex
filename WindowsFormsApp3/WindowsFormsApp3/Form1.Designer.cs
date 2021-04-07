@@ -132,8 +132,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "中文字轉Big-5轉10進位                  By.Fangs.dev ";
+            this.Text = "中文字轉Big-5轉10進位                  By.weifang.github.io";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
