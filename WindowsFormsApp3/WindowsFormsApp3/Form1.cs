@@ -45,7 +45,35 @@ namespace WindowsFormsApp3
 
 		private void textBox1_TextChanged(object sender, EventArgs e)
 		{
+			if(sender == "")
+            {
 
+            }
+			if (textBox1.Text != "")
+			{
+				string Str;
+				byte[] output;
+				int inputNUM = textBox1.Text.Length;
+				textBox2.Text = "";
+				textBox3.Text = "";
+				for (int i = 1; i <= inputNUM; i++)
+				{
+					Console.WriteLine(inputNUM);
+					Str = textBox1.Text.Substring(i - 1, 1);
+					output = Encoding.GetEncoding("BIG5").GetBytes(Str);
+					String result = ToHexString(output);
+					textBox2.Text += Str + " " + result + Environment.NewLine;
+					textBox3.Text += result + " ";
+				}
+			}
+			else if (textBox1.Text == "請輸入中文字...")
+			{
+				return;
+			}
+			else
+			{
+
+			}
 		}
 		private void textBox1_Enter(object sender, EventArgs e)
 		{
@@ -78,43 +106,15 @@ namespace WindowsFormsApp3
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			if (textBox1.Text != "")
-			{
-				string Str;
-				byte[] output;
-				int inputNUM = textBox1.Text.Length;
-				textBox2.Text = "";
-				textBox3.Text = "";
-				for (int i = 1; i <= inputNUM; i++)
-				{
-					Console.WriteLine(inputNUM);
-					Str = textBox1.Text.Substring(i - 1, 1);
-					output = Encoding.GetEncoding("BIG5").GetBytes(Str);
-					String result = ToHexString(output);
-					textBox2.Text += Str + " " + result + Environment.NewLine;
-					textBox3.Text += result + " ";
-				}
-			}
-			else if (textBox1.Text == "請輸入中文字...")
-			{
 
-			}
-			else
-			{
-
-			}
 		}
 
 		private void textBox3_TextChanged(object sender, EventArgs e)
 		{
-
-		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
-			if (textBox3.Text !="")
-			{ 
-				if(textBox3.Text != "請輸入BIG-5碼...")
+			textBox4.Text = "";
+			if (textBox3.Text != "")
+			{
+				if (textBox3.Text != "請輸入BIG-5碼...")
 				{
 					string hexval = textBox3.Text;
 					hexval = hexval.Trim();
@@ -125,8 +125,13 @@ namespace WindowsFormsApp3
 						textBox4.Text += result.ToString() + Environment.NewLine;
 					}
 				}
-				
+
 			}
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+
 
 		}
 	}
