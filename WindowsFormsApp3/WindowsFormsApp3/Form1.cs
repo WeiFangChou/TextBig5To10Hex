@@ -48,20 +48,8 @@ namespace WindowsFormsApp3
 
 			if (textBox1.Text != "")
 			{
-				string Str;
-				byte[] output;
-				int inputNUM = textBox1.Text.Length;
-				textBox2.Text = "";
-				textBox3.Text = "";
-				for (int i = 1; i <= inputNUM; i++)
-				{
-					Console.WriteLine(inputNUM);
-					Str = textBox1.Text.Substring(i - 1, 1);
-					output = Encoding.GetEncoding("BIG5").GetBytes(Str);
-					String result = ToHexString(output);
-					textBox2.Text += Str + " " + result + Environment.NewLine;
-					textBox3.Text += result + " ";
-				}
+
+
 			}
 			else if (textBox1.Text == "請輸入中文字...")
 			{
@@ -74,10 +62,7 @@ namespace WindowsFormsApp3
 		}
 		private void textBox1_Enter(object sender, EventArgs e)
 		{
-			if(textBox1.Text== "請輸入中文字...")
-			{
-				textBox1.Text = "";
-			}
+			
 		}
 		private void textBox1_Leave(object sender, EventArgs e)
 		{
@@ -86,50 +71,36 @@ namespace WindowsFormsApp3
 				textBox1.Text = "請輸入中文字...";
 			}
 		}
-		private void textBox3_Enter(object sender, EventArgs e)
-		{
-			if (textBox3.Text == "請輸入BIG-5碼...")
-			{
-				textBox3.Text = "";
-			}
-		}
-		private void textBox3_Leave(object sender, EventArgs e)
-		{
-			if (textBox3.Text == "")
-			{
-				textBox3.Text = "請輸入BIG-5碼...";
-			}
-		}
+
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
-		}
-
-		private void textBox3_TextChanged(object sender, EventArgs e)
-		{
-			textBox4.Text = "";
-			if (textBox3.Text != "")
-			{
-				if (textBox3.Text != "請輸入BIG-5碼...")
+			if(textBox1.Text.Length != 0)
+            {
+				textBox2.Text = "";
+				string Str;
+				byte[] output;
+				char[] values = textBox1.Text.ToCharArray();
+				for (int i = 1; i <= textBox1.Text.Length; i++)
 				{
-					string hexval = textBox3.Text;
-					hexval = hexval.Trim();
-					string[] hexSplit = hexval.Split(' ');
-					foreach (string hex in hexSplit)
-					{
-						int result = Convert.ToInt32(hex, 16);
-						textBox4.Text += result.ToString() + Environment.NewLine;
-					}
+					Str = textBox1.Text.Substring(i - 1, 1);
+					output = Encoding.GetEncoding("BIG5").GetBytes(Str);
+					String result = ToHexString(output);
+
+					int resultInt = Convert.ToInt32(result, 16);
+
+					String outputStr = $"{Str}：(16) {result} (10) {resultInt}";
+
+					textBox2.Text += outputStr + Environment.NewLine;
+
+					//Console.WriteLine(resultInt);
+					//Console.WriteLine(result);
+
 				}
-
 			}
-		}
-
-		private void button2_Click(object sender, EventArgs e)
-		{
-
+			textBox1.SelectAll();
 
 		}
+
 	}
 }

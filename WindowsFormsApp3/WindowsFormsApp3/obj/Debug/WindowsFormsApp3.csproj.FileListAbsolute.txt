@@ -17,3 +17,13 @@ C:\Users\jack8\Documents\GitHub\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp
 C:\Users\jack8\Documents\GitHub\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
 C:\Users\jack8\Documents\GitHub\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\中文字轉Big-5轉10進位.exe
 C:\Users\jack8\Documents\GitHub\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\中文字轉Big-5轉10進位.pdb
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\中文字轉Big-5轉10進位.exe.config
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\中文字轉Big-5轉10進位.exe
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\中文字轉Big-5轉10進位.pdb
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csprojAssemblyReference.cache
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\中文字轉Big-5轉10進位.exe
+C:\Users\jack8\Source\Repos\WeiFangChou\TextBig5To10Hex\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\中文字轉Big-5轉10進位.pdb
